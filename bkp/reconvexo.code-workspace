@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ui.h": "c",
+			"wifi.h": "c",
+			"core2foraws.h": "c"
+		}
+	}
+}
