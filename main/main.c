@@ -620,8 +620,11 @@ void aws_iot_task(void *param) {
     rc = aws_iot_shadow_register_delta(&iotCoreClient, &Valve6OpenActuator);
     ESP_LOGE(TAG, "aws_iot_shadow_register_delta: %d", rc);
     if(SUCCESS != rc) {ESP_LOGE(TAG, "Shadow Register Delta Error");}
+    
+   
+
   
-  
+
     ESP_LOGI(TAG, "loop and publish changes");
     // loop and publish changes
     while(NETWORK_ATTEMPTING_RECONNECT == rc || NETWORK_RECONNECTED == rc || SUCCESS == rc) {
